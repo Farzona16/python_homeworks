@@ -1,20 +1,82 @@
 # ### List Tasks
 
 # 1. **Count Occurrences**: Given a list and an element, find how many times the element appears in the list.
+# mylist=[1,2,'hello',3,4,'good','hello']
+# print(mylist.count('hello'))
+
 # 2. **Sum of Elements**: Given a list of numbers, calculate the total of all the elements.
+# mylist=[1,2,5,3,4,6,7]
+# total=sum(mylist)
+# print(total)
+        
 # 3. **Max Element**: From a given list, determine the largest element.
+# mylist=[1,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# mylist.sort(reverse=True)
+# print(mylist[0])
+
 # 4. **Min Element**: From a given list, determine the smallest element.
+# mylist=[1,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# smallest=min(mylist)
+# print(smallest)
+
 # 5. **Check Element**: Given a list and an element, check if the element is present in the list.
+# mylist=[1,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# if 7 in mylist:
+#     print("yes")
+
 # 6. **First Element**: Access the first element of a list, considering what to return if the list is empty.
+# mylist=[7,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# if len(mylist)!=0:
+#     print(mylist[0])
+# else: print("empty")
+
 # 7. **Last Element**: Access the last element of a list, considering what to return if the list is empty.
+# mylist=[7,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# if len(mylist)!=0:
+#     print(mylist[-1])
+# else: print("empty")
+
+
 # 8. **Slice List**: Create a new list that contains only the first three elements of the original list.
+# mylist=[7,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# newlist=mylist[:3]
+# print(newlist)
+
 # 9. **Reverse List**: Create a new list that contains the elements of the original list in reverse order.
+# mylist=[7,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# mylist.reverse()
+# print(mylist)
+
 # 10. **Sort List**: Create a new list that contains the elements of the original list in sorted order.
+# mylist=[7,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# mylist.sort()
+# print(mylist)
+
 # 11. **Remove Duplicates**: Given a list, create a new list that contains only unique elements from the original list.
+# mylist=[1,5,7,2,5,3,4,6,7,10,20,40,1,25,19,30]
+# unique_list=[]
+# for x in mylist:
+#     if x not in unique_list:
+#         unique_list.append(x)
+# print(unique_list)
+      
 # 12. **Insert Element**: Given a list and an element, insert the element at a specified index.
+# mylist=["apple","banana","cherry","apricot","pineapple"]
+# mylist.insert(2,"hello")
+# print(mylist)
+
 # 13. **Index of Element**: Given a list and an element, find the index of the first occurrence of the element.
+# mylist=["apple","banana","cherry","apricot","pineapple"]
+# print(mylist.index("banana"))
+
 # 14. **Check for Empty List**: Determine if a list is empty and return a boolean.
+# mylist=[]
+# if  mylist==[]:
+#     print("True")
+
 # 15. **Count Even Numbers**: Given a list of integers, count how many of them are even.
+
+
 # 16. **Count Odd Numbers**: Given a list of integers, count how many of them are odd.
 # 17. **Concatenate Lists**: Given two lists, create a new list that combines both lists.
 # 18. **Find Sublist**: Given a list and a sublist, check if the sublist exists within the list.
