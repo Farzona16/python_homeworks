@@ -75,32 +75,181 @@
 #     print("True")
 
 # 15. **Count Even Numbers**: Given a list of integers, count how many of them are even.
-
+# mylist=[1,2,3,4,5,6,9,14,15,13,18,17,25,27,43]
+# even_count=0
+# for i in range(len(mylist)):
+#     if mylist[i]%2==0:
+#         even_count+=1
+# print(f"{even_count} even number(s) ")
 
 # 16. **Count Odd Numbers**: Given a list of integers, count how many of them are odd.
+# mylist=[1,2,3,4,5,6,9,14,15,13,18,17,25,27,43]
+# odd_count=0
+# for i in range(len(mylist)):
+#     if mylist[i]%2==1:
+#         odd_count+=1
+# print(f"{odd_count} odd number(s)")
+
 # 17. **Concatenate Lists**: Given two lists, create a new list that combines both lists.
+# mylist=[1,2,3,4,5,6,9,14]
+# my_2list=[15,13,18,17,25,27,43]
+# my_3list=mylist+my_2list
+# print(my_3list)
+
 # 18. **Find Sublist**: Given a list and a sublist, check if the sublist exists within the list.
+'''# mylist=[1,2,3,0,5,6,9,14]
+# sublist=[3,4,5]
+# n=len(mylist)
+# m=len(sublist)
+# for i in range(n):
+#     if mylist[i]=sublist[0] and 
+        
+#     else:
+#         print("no")'''
+
 # 19. **Replace Element**: Given a list, replace the first occurrence of a specified element with another element.
+# mylist=[1,2,3,0,5,6,9,14]
+# given_element=5
+# another_element=90
+# for i in range(len(mylist)):
+#     if mylist[i]==given_element:
+#         mylist[i]=another_element
+# print(mylist)
+
 # 20. **Find Second Largest**: From a given list, find the second largest element.
+# mylist=[1,2,3,0,5,6,9,14]
+# mylist.sort(reverse=True)
+# print(mylist[1])
+
 # 21. **Find Second Smallest**: From a given list, find the second smallest element.
+# mylist=[1,2,3,0,5,6,9,14]
+# mylist.sort()
+# print(mylist[1])
+
 # 22. **Filter Even Numbers**: Given a list of integers, create a new list that contains only the even numbers.
+# mylist=[1,2,3,0,5,6,9,14]
+# new_list=[]
+# for i in range(len(mylist)):
+#     if mylist[i]%2==0:
+#         new_list.append(mylist[i])
+# print(new_list)
+
 # 23. **Filter Odd Numbers**: Given a list of integers, create a new list that contains only the odd numbers.
+# mylist=[1,2,3,0,5,6,9,14]
+# new_list=[]
+# for i in range(len(mylist)):
+#     if mylist[i]%2==1:
+#         new_list.append(mylist[i])
+# print(new_list)
+
 # 24. **List Length**: Determine the number of elements in the list.
+# mylist=[1,2,3,0,5,6,9,14]
+# num=len(mylist)
+# print(num)
+
 # 25. **Create a Copy**: Create a new list that is a copy of the original list.
+# mylist=[1,2,3,0,5,6,9,14]
+# new_list=mylist.copy()
+# print(new_list)
+
 # 26. **Get Middle Element**: Given a list, find the middle element. If the list has an even number of elements, return the two middle elements.
+# mylist=[1,2,3,4,6,5,7,9,14]
+# num=len(mylist)
+# my_num=0
+# a=int(num/2)
+# if num%2==1:
+#     my_num=(mylist[a])
+# else:my_num=(mylist[a-1],mylist[a])
+# print(my_num)
+
 # 27. **Find Maximum of Sublist**: Given a list, find the maximum element of a specified sublist.
+# mylist=[1,2,3,4,6,5,7,9,14]
+# sublist=mylist[3:7]
+# print(max(sublist))
+
 # 28. **Find Minimum of Sublist**: Given a list, find the minimum element of a specified sublist.
+# mylist=[1,2,3,4,6,5,7,9,14]
+# sublist=mylist[3:7]
+# print(min(sublist))
+
 # 29. **Remove Element by Index**: Given a list and an index, remove the element at that index if it exists.
+# mylist=[1,2,3,4,6,5,7,9,14]
+# mylist.pop(3)
+# print(mylist)
+
 # 30. **Check if List is Sorted**: Determine if the list is sorted in ascending order and return a boolean.
+# mylist=[1,2,3,4,5,7,9,14]
+# is_sorted=all(mylist[i]<=mylist[i+1] for i in range(len(mylist)-1))
+# print(is_sorted)
+
 # 31. **Repeat Elements**: Given a list and a number, create a new list where each element is repeated that number of times.
+# mylist=[1,2,3,4,5,7,9,14]
+# num=4
+# new_list=[]
+# for i in range(len(mylist)):
+#     new_list.extend([mylist[i]]*num)
+# print(new_list)
+
 # 32. **Merge and Sort**: Given two lists, create a new sorted list that merges both lists.
+# mylist=[1,2,3,4,5,7,9,14]
+# second=[15,19,18,0]
+# mylist.sort()
+# second.sort()
+# third=mylist+second
+# third.sort()
+# print(third)
+
 # 33. **Find All Indices**: Given a list and an element, find all the indices of that element in the list.
+# mylist=[1,2,3,4,5,7,9,14]
+# num=7
+# for i in range(len(mylist)):
+#     if mylist[i]==num:
+#         print(i)
+
 # 34. **Rotate List**: Given a list, create a new list that is a rotated version of the original list (shift elements to the right).
+# mylist=[1,2,0,3,4,5,7,9,14]
+# mylist.reverse()
+# print(mylist)
+
 # 35. **Create Range List**: Create a list of numbers in a specified range (e.g., from 1 to 10).
+# number1=int(input("enter the beginning point: "))
+# number2=int(input("enter the ending point: "))
+# for i in range(number2-number1):
+#     number1+=1
+#     print(number1-1)
+#     if number1==number2:
+#         break
+
 # 36. **Sum of Positive Numbers**: Given a list of numbers, calculate the sum of all positive numbers.
+# mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14]
+# sum=0
+# for i in range(len(mylist)):
+#     if mylist[i]>0:
+#         sum+=mylist[i]
+# print(sum)
+
 # 37. **Sum of Negative Numbers**: Given a list of numbers, calculate the sum of all negative numbers.
+# mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14]
+# sum=0
+# for i in range(len(mylist)):
+#     if mylist[i]<0:
+#         sum+=mylist[i]
+# print(sum)
+
 # 38. **Check Palindrome**: Given a list, check if the list is a palindrome (reads the same forwards and backwards).
+'''mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14]
+new_list=mylist.reverse()
+print(mylist)
+print(new_list)'''
+
 # 39. **Create Nested List**: Create a new list that contains sublists, where each sublist contains a specified number of elements from the original list.
+mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14]
+num=3
+for i in range(len(mylist)):
+    if len(mylist)%3==0:
+        mylist(slice,3)
+print(mylist)
+
 # 40. **Get Unique Elements in Order**: Given a list, create a new list that contains unique elements while maintaining the original order.
 
 

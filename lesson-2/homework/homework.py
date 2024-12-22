@@ -54,9 +54,9 @@
 # age=2024-year
 # print(f"Hello {name}! You are {age} years old.")
 
-# 2. Extract car names from this text:
+''''# 2. Extract car names from this text:
 # txt = 'LMaasleitbtui'
-#-----------ISHLOLMADIM--------------
+#-----------ISHLOLMADIM--------------'''
 
 
 # 3. Write a Python program to:
@@ -69,13 +69,13 @@
 # print(text.upper())
 # print(text.lower())
 
-# 4. Write a Python program to check if a given string is `palindrome` or not.
-#--------------ISHLOLMADIM--------------
+'''# 4. Write a Python program to check if a given string is `palindrome` or not.
+#--------------ISHLOLMADIM--------------'''
 
 # > What is a Palindrome String? A string is called a palindrome if the reverse of the string is the same as the original one. Example: “madam”, “racecar”, “12321”.
 
-# 5. Write a program that counts the number of vowels and consonants in a given string.
-#--------------Ishlolmadim------------
+'''# 5. Write a program that counts the number of vowels and consonants in a given string.
+#--------------Ishlolmadim------------'''
 
 # 6. Write a Python program to check if one string contains another.
 # def contains(main,sub):
@@ -123,11 +123,11 @@
 # else:print("these sentence doesnt contain any digit")
 
 
-# 12. Write a program that takes a list of words and joins them into a single string, separated by a character (e.g., `-` or `,`).  
+'''# 12. Write a program that takes a list of words and joins them into a single string, separated by a character (e.g., `-` or `,`).  
 
 # 13. Ask the user for a string and remove all spaces from it.  
 
-# 14. Write a program to ask for two strings and check if they are equal or not.  
+# 14. Write a program to ask for two strings and check if they are equal or not.
 
 # 15. Ask the user for a sentence and create an acronym from the first letters of each word.  
 #     Example:  
@@ -142,7 +142,7 @@
 #     Example:  
 #     - Input: "Python is fun!"  
 #     - Starts with: "Python"  
-#     - Ends with: "fun!"  
+#     - Ends with: "fun!"  '''
 
 
 ### Boolean Data Type Questions:
