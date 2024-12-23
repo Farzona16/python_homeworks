@@ -237,73 +237,308 @@
 # print(sum)
 
 # 38. **Check Palindrome**: Given a list, check if the list is a palindrome (reads the same forwards and backwards).
-'''mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14]
-new_list=mylist.reverse()
-print(mylist)
-print(new_list)'''
+# mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14]
+# new_list=list(reversed(mylist))
+# print(mylist.reverse()==new_list)
+
 
 # 39. **Create Nested List**: Create a new list that contains sublists, where each sublist contains a specified number of elements from the original list.
-mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14]
-num=3
-for i in range(len(mylist)):
-    if len(mylist)%3==0:
-        mylist(slice,3)
-print(mylist)
+# mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9]
+# num=3
+# result=[mylist[i:i+num] for i in range(0,len(mylist),num)]
+# print(result)
 
 # 40. **Get Unique Elements in Order**: Given a list, create a new list that contains unique elements while maintaining the original order.
+# mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9]
+# new_list=[]
+# for i in mylist:
+#     if i not in new_list:
+#         new_list.append(i)
+# print(new_list)
 
 
 # ### Tuple Tasks
 
 # 1. **Count Occurrences**: Given a tuple and an element, find how many times the element appears in the tuple.
-# 2. **Max Element**: From a given tuple, determine the largest element.
-# 3. **Min Element**: From a given tuple, determine the smallest element.
-# 4. **Check Element**: Given a tuple and an element, check if the element is present in the tuple.
-# 5. **First Element**: Access the first element of a tuple, considering what to return if the tuple is empty.
-# 6. **Last Element**: Access the last element of a tuple, considering what to return if the tuple is empty.
-# 7. **Tuple Length**: Determine the number of elements in the tuple.
-# 8. **Slice Tuple**: Create a new tuple that contains only the first three elements of the original tuple.
-# 9. **Concatenate Tuples**: Given two tuples, create a new tuple that combines both.
-# 10. **Check if Tuple is Empty**: Determine if a tuple has any elements.
-# 11. **Get All Indices of Element**: Given a tuple and an element, find all the indices of that element in the tuple.
-# 12. **Find Second Largest**: From a given tuple, find the second largest element.
-# 13. **Find Second Smallest**: From a given tuple, find the second smallest element.
-# 14. **Create a Single Element Tuple**: Create a tuple that contains a single specified element.
-# 15. **Convert List to Tuple**: Given a list, create a tuple containing the same elements.
-# 16. **Check if Tuple is Sorted**: Determine if the tuple is sorted in ascending order and return a boolean.
-# 17. **Find Maximum of Subtuple**: Given a tuple, find the maximum element of a specified subtuple.
-# 18. **Find Minimum of Subtuple**: Given a tuple, find the minimum element of a specified subtuple.
-# 19. **Remove Element by Value**: Given a tuple and an element, create a new tuple that removes the first occurrence of that element.
-# 20. **Create Nested Tuple**: Create a new tuple that contains subtuples, where each subtuple contains specified elements from the original tuple.
-# 21. **Repeat Elements**: Given a tuple and a number, create a new tuple where each element is repeated that number of times.
-# 22. **Create Range Tuple**: Create a tuple of numbers in a specified range (e.g., from 1 to 10).
-# 23. **Reverse Tuple**: Create a new tuple that contains the elements of the original tuple in reverse order.
-# 24. **Check Palindrome**: Given a tuple, check if the tuple is a palindrome (reads the same forwards and backwards).
-# 25. **Get Unique Elements**: Given a tuple, create a new tuple that contains only the unique elements while maintaining the original order.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3)
+# element=3
+# num=0
+# for i in range(len(mytuple)):
+#     if element == mytuple[i]:
+#         num+=1
+# print(num)
 
+# 2. **Max Element**: From a given tuple, determine the largest element.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# print(max(mytuple))
+
+# 3. **Min Element**: From a given tuple, determine the smallest element.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# print(min(mytuple))
+
+# 4. **Check Element**: Given a tuple and an element, check if the element is present in the tuple.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# element=8
+# print(element in mytuple)
+
+# 5. **First Element**: Access the first element of a tuple, considering what to return if the tuple is empty.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# empty=tuple()
+# if mytuple!=empty:
+#     print(mytuple[0])
+# else:print(empty)
+
+# 6. **Last Element**: Access the last element of a tuple, considering what to return if the tuple is empty.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# empty=tuple()
+# if mytuple!=empty:
+#     print(mytuple[-1])
+# else:print(empty)
+
+# 7. **Tuple Length**: Determine the number of elements in the tuple.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# print(len(mytuple))
+
+# 8. **Slice Tuple**: Create a new tuple that contains only the first three elements of the original tuple.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# print(mytuple[0:3])
+
+# 9. **Concatenate Tuples**: Given two tuples, create a new tuple that combines both.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# my_2tuple=(30,40,50)
+# my_3tuple=mytuple+my_2tuple
+# print(my_3tuple)
+
+# 10. **Check if Tuple is Empty**: Determine if a tuple has any elements.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# empty=tuple()
+# if mytuple!=empty:
+#     print("it is not empty")
+# else:print("empty")
+
+# 11. **Get All Indices of Element**: Given a tuple and an element, find all the indices of that element in the tuple.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# element=7
+# indecis=[]
+# for i in range(len(mytuple)):
+#     if element==mytuple[i]:
+#         indecis.append(i)
+# new_tuple=tuple(indecis)
+# print(new_tuple)
+
+# 12. **Find Second Largest**: From a given tuple, find the second largest element.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# new_list=list(mytuple)
+# new_list.sort(reverse=True)
+# print(new_list[1])
+
+# 13. **Find Second Smallest**: From a given tuple, find the second smallest element.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# new_list=list(mytuple)
+# new_list.sort()
+# print(new_list[1])
+
+# 14. **Create a Single Element Tuple**: Create a tuple that contains a single specified element.
+# mytuple=(40,)
+# print(mytuple)
+
+# 15. **Convert List to Tuple**: Given a list, create a tuple containing the same elements.
+# mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21]
+# mytuple=tuple(mylist)
+# print(mytuple)
+
+# 16. **Check if Tuple is Sorted**: Determine if the tuple is sorted in ascending order and return a boolean.
+# mytuple=(1,2,3,4,5,6,7)
+# is_sorted=True
+# for i in range(len(mytuple)-1):
+#    if mytuple[i]>=mytuple[i+1]:
+#       is_sorted=False
+# print(is_sorted)
+
+# 17. **Find Maximum of Subtuple**: Given a tuple, find the maximum element of a specified subtuple.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# subtuple=mytuple[7:16]
+# print(max(subtuple))
+
+# 18. **Find Minimum of Subtuple**: Given a tuple, find the minimum element of a specified subtuple.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# subtuple=mytuple[7:16]
+# print(min(subtuple))
+
+# 19. **Remove Element by Value**: Given a tuple and an element, create a new tuple that removes the first occurrence of that element.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# element=3
+# mylist=list(mytuple)
+# if element in mylist:
+#     mylist.remove(element)
+# print(mylist)
+
+# 20. **Create Nested Tuple**: Create a new tuple that contains subtuples, where each subtuple contains specified elements from the original tuple.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# num=3
+# newlist=[]
+# for i in range(0,len(mytuple),num):
+#     newlist.append(tuple(mytuple[i:i+num]))
+# nested_tuple=tuple(newlist)
+# print(nested_tuple)
+
+# 21. **Repeat Elements**: Given a tuple and a number, create a new tuple where each element is repeated that number of times.
+# mytuple=(1,2,3,45,89)
+# num=3
+# mylist=[]
+# for i in range(len(mytuple)):
+#     mylist.extend([mytuple[i]]*num)
+# newlist=tuple(mylist)
+# print(newlist)
+
+# 22. **Create Range Tuple**: Create a tuple of numbers in a specified range (e.g., from 1 to 10).
+# start=int(input("enter the beginning point: "))
+# end=int(input("enter the endning point: "))
+# num=[start]
+# for i in range(end-start):
+#     start+=1
+#     num.append(start)
+# print(tuple(num))
+
+# 23. **Reverse Tuple**: Create a new tuple that contains the elements of the original tuple in reverse order.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# mylist=list(mytuple)
+# newlist=tuple(reversed(mylist))
+# print(newlist)
+
+# 24. **Check Palindrome**: Given a tuple, check if the tuple is a palindrome (reads the same forwards and backwards).
+# mytuple=(1,2,3,2,1,4)
+# mylist=list(mytuple)
+# new_list=list(reversed(mylist))
+# if mylist==new_list:
+#     print("it is polindrome")
+# else:print("it is not polindrome")
+
+# 25. **Get Unique Elements**: Given a tuple, create a new tuple that contains only the unique elements while maintaining the original order.
+# mytuple=(1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21)
+# mylist=list(mytuple)
+# newlist=[]
+# for i in range(len(mylist)):
+#     if mylist[i] not in newlist:
+#         newlist.append(mylist[i])
+# print(tuple(newlist))
 
 # ### Set Tasks
 
 # 1. **Union of Sets**: Given two sets, create a new set that contains all unique elements from both sets.
+# first_set={1,2,3,4,5,'e','r','t','h'}
+# second_set={'a','s','d','f','g','h','t','e','r'}
+# union_set=first_set.union(second_set)
+# print(union_set)
+
 # 2. **Intersection of Sets**: Given two sets, create a new set that contains elements common to both sets.
+# first_set={1,2,3,4,5,'e','r','t','h'}
+# second_set={'a','s','d','f','g','h','t','e','r'}
+# inter_set=first_set.intersection(second_set)
+# print(inter_set)
+
 # 3. **Difference of Sets**: Given two sets, create a new set with elements from the first set that are not in the second.
+# first_set={1,2,3,4,5,'e','r','t','h'}
+# second_set={'a','s','d','f','g','h','t','e','r',1}
+# differ_set=first_set.difference(second_set)
+# print(differ_set)
+
 # 4. **Check Subset**: Given two sets, check if one set is a subset of the other.
+# first_set={1,2,3,4,5,'e','r','t','h'}
+# second_set={1,2,'e',8}
+# print(second_set.issubset(first_set))
+
 # 5. **Check Element**: Given a set and an element, check if the element exists in the set.
+# first_set={1,2,3,4,5,'e','r','t','h'}
+# element='l'
+# print(element in first_set)
+
 # 6. **Set Length**: Determine the number of unique elements in a set.
+# first_set={1,2,3,4,5,'e','r','t','h',1,2}
+# print(len(first_set))
+
 # 7. **Convert List to Set**: Given a list, create a new set that contains only the unique elements from that list.
+# mylist=[1,2,-4,-7,-3,0,3,4,5,7,9,14,3,4,7,9,6,3,21]
+# my_set=set((mylist))
+# print(my_set)
+
 # 8. **Remove Element**: Given a set and an element, remove the element if it exists.
-# 9. **Clear Set**: Create a new empty set from an existing set.
+# first_set={1,2,3,4,5,'e','r','t','h',1,2}
+# element=5
+# first_set.remove(element)
+# print(first_set)
+
 # 10. **Check if Set is Empty**: Determine if a set has any elements.
+# myset={}
+# empty={}
+# print(myset!=empty)
+
 # 11. **Symmetric Difference**: Given two sets, create a new set that contains elements that are in either set but not in both.
+# first_set={1,2,3,4,5,'e','r','t','h'}
+# second_set={'a','s','d','f','g','h','t','e','r',1}
+# sym_set=first_set.symmetric_difference(second_set)
+# print(sym_set)
+
 # 12. **Add Element**: Given a set and an element, add the element to the set if it is not already present.
+# first_set={1,2,3,4,5,'e','r','t','h'}
+# element='g'
+# first_set.add(element)
+# print(first_set)
+
 # 13. **Pop Element**: Given a set, remove and return an arbitrary element from the set.
+# first_set={1,2,3,4,5,'e','r','t','h'}
+# element=first_set.pop()
+# print(element)
+# print(first_set)
+
 # 14. **Find Maximum**: From a given set of numbers, find the maximum element.
+# first_set={1,2,3,4,5}
+# element=max(first_set)
+# print(element)
+
 # 15. **Find Minimum**: From a given set of numbers, find the minimum element.
+# first_set={1,2,3,4,5}
+# element=min(first_set)
+# print(element)
+
 # 16. **Filter Even Numbers**: Given a set of integers, create a new set that contains only the even numbers.
+# first_set={1,2,3,4,5,6,8,9,10,13,16,28}
+# newlist=[]
+# my_list=list(first_set)
+# for i in range(len(my_list)):
+#     if my_list[i]%2==0:
+#         newlist.append(my_list[i])
+# newset=set(newlist)
+# print(newset)
+
 # 17. **Filter Odd Numbers**: Given a set of integers, create a new set that contains only the odd numbers.
+# first_set={1,2,3,4,5,6,8,9,10,13,16,28}
+# newlist=[]
+# my_list=list(first_set)
+# for i in range(len(my_list)):
+#     if my_list[i]%2==1:
+#         newlist.append(my_list[i])
+# newset=set(newlist)
+# print(newset)
+
 # 18. **Create a Set of a Range**: Create a set of numbers in a specified range (e.g., from 1 to 10).
+# start=int(input("enter the beginning point: "))
+# end=int(input("enter the ending point: "))
+# num=[start]
+# for i in range(end-start):
+#     start+=1
+#     num.append(start)
+# print(set(num))
+
 # 19. **Merge and Deduplicate**: Given two lists, create a new set that merges both lists and removes duplicates.
+# first_list=[1,2,3,4,5,6,7,4,3,2]
+# second_list=[3,7,8,9,4,5,6]
+# third_list=first_list+second_list
+# my_set=set(third_list)
+# print(my_set)
+
 # 20. **Check Disjoint Sets**: Given two sets, check if they have no elements in common.
+
 # 21. **Remove Duplicates from a List**: Given a list, create a set from it to remove duplicates, then convert back to a list.
 # 22. **Count Unique Elements**: Given a list, determine the count of unique elements using a set.
 # 23. **Generate Random Set**: Create a set with a specified number of random integers within a certain range.
