@@ -17,17 +17,28 @@
 
 # ```
 # input:
-#     list1 = [1, 2, 3]
-#     list2 = [4, 5, 6]
+# list1 = [1, 2, 3]
+# list2 = [4, 5, 6]
 # output: [1, 2, 3, 4, 5, 6]
 # ```
 
 # ```
 # input:
-#     list1 = [1, 1, 2, 3, 4, 2]
-#     list2 = [1, 3, 4, 5]
+# list1 = [1, 1, 2, 3, 4, 2]
+# list2 = [1, 3, 4, 5]
 # output: [2, 2, 5]
 # ```
+
+# list1=[1,1,2]
+# list2=[2,3,4]
+# list3=[]
+# for i in list1:
+#     if i not in list2:
+#         list3.append(i)
+# for j in list2:
+#     if j not in list1:
+#         list3.append(j)
+# print(list3)
 
 # **2.** Print the square of each number which is less than `n` on a separate line.
 
@@ -39,6 +50,11 @@
 #     9
 #     16
 # ```
+
+# n=int(input("enter the number n="))
+# for i in range(1,n):
+#     i=i**2
+#     print(i)
 
 # **3.** `txt` nomli string saqlovchi o'zgaruvchi berilgan. `txt`dagi har uchinchi belgidan keyin pastgi chiziqcha (underscore) qo'yilsin. Agar belgi unli harf yoki orqasidan ostki chiziqcha qo'yilgan harf bo'lsa, ostki chiziqcha keyingi harfdan keyin qo'yilsin. Agar belgi satrdagi oxirgi belgi bo'lsa chiziqcha qo'yilmasin.
 
@@ -56,7 +72,10 @@
 # input: abcabcdabcdeabcdefabcdefg
 # output: abc_abcd_abcdeab_cdef_abcdefg
 # ```
-
+# txt=(input("enter your text: "))
+# num=3
+# for i in txt:
+#     tx
 
 # **4. Number Guessing Game**
 # Create a simple number guessing game.
@@ -66,9 +85,52 @@
 # - If they guess correctly, print "You guessed it right!" and exit the loop.
 # - The player has 10 attempts to guess it. If the player can not find the correct number in 10 attempts, print "You lost. Want to play again? ".
 # - If the player types one of 'Y', 'YES', 'y', 'yes', 'ok' then start the game from the beginning.
-
+# import random
+# x=random.randint(1,100)
+# a=int(input("enter your 1st guess: "))
+# if a==x:
+#     print(f"Congratulations you are winner and the guessed number is {x}!")
+# else:
+#     b=int(input("enter your next guess: "))
+#     if b==x:
+#         print(f"Congratulations you are winner and the guessed number is {x}!")
+#     else:
+#         c=int(input("enter your next guess: "))
+#         if c==x:
+#             print(f"Congratulations you are winner and the guessed number is {x}!")
+#         else:
+#             d=int(input("enter your next guess: "))
+#             if d==x:
+#                 print(f"Congratulations you are winner and the guessed number is {x}!")
+#             else:
+#                 e=int(input("enter your next guess: "))
+#                 if e==x:
+#                     print(f"Congratulations you are winner and the guessed number is {x}!")
+#                 else:
+#                     f=int(input("enter your next guess: "))
+#                     if f==x:
+#                         print(f"Congratulations you are winner and the guessed number is {x}!")
+#                     else:
+#                         g=int(input("enter your next guess: "))
+#                         if g==x:
+#                             print(f"Congratulations you are winner and the guessed number is {x}!")
+#                         else:
+#                             h=int(input("enter your next guess: "))
+#                             if h==x:
+#                                 print(f"Congratulations you are winner and the guessed number is {x}!")
+#                             else:
+#                                 i=int(input("enter your next guess: "))
+#                                 if i==x:
+#                                     print(f"Congratulations you are winner and the guessed number is {x}!")
+#                                 else:
+#                                     j=int(input("enter your next guess: "))
+#                                     if j==x:
+#                                         print(f"Congratulations you are winner and the guessed number is {x}!")
+#                                     else:
+#                                         print(f"You lost the game and the number is {x}")
 
 # > Hint: Use Python’s `random.randint()` to generate the number.
+
 
 # **5. Password Checker**
 # Task: Create a simple password checker.
@@ -76,17 +138,24 @@
 # - If the password is shorter than 8 characters, print "Password is too short." 
 # - If the password doesn’t contain at least one uppercase letter, print "Password must contain an uppercase letter.". 
 # - If the password meets both criteria, print "Password is strong."
+# password=input("enter your password: ")
+# if len(password)>=8:
+#     if any(c.isupper() for c in password):
+#         print("Password is strong.")
+#     else:print("Password must contain at least one uppercase letter.")
+# else: print("Password is too short.")
+
 
 # **6. Prime Numbers**
 # Task: Write a Python program that prints all prime numbers between 1 and 100.
 
 # > A prime number is a number greater than 1 that is not divisible by any number other than 1 and itself. Use nested loops to check divisibility.
-
 # ---
-
+'''---------------------------'''
 # ### Bonus Challenge
 # Task: Create a simple text-based Rock, Paper, Scissors game where the player plays against the computer.
 # - The computer randomly chooses `rock`, `paper`, or `scissors` using `random.choice()`.
 # - The player enters their choice.
 # - Display the winner and keep track of scores for the player and the computer.
 # - First to 5 points wins the match.
+'''------------------------------'''
