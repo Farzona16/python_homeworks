@@ -678,12 +678,42 @@ for i in my_dict.values():
 # print(len(set(values)))
 
 # 20. **Sort Dictionary by Key**: Create a new dictionary sorted by keys.
-my_dict={'b':1,'d':2,'c':3,'a':6, 'e':6}
-newdict=sorted(my_dict)
-print(my_dict)
-print(newdict)
+# my_dict={'b':1,'d':2,'c':3,'a':6, 'e':6}
+# newdict=dict(sorted(my_dict.items()))
+# print(newdict)
+
 # 21. **Sort Dictionary by Value**: Create a new dictionary sorted by values.
+# my_dict={'b':1,'d':2,'c':3,'a':6, 'e':6}
+# newdict=dict(sorted(my_dict.items(), key=lambda x: x[1]))
+# print(newdict)
+
+
 # 22. **Filter by Value**: Given a dictionary, create a new dictionary that only includes items with values that meet a certain condition.
+# original_dict = {'a': 8, 'b': 12, 'c': 17, 'd': 20}
+# for key, value in original_dict.items():
+#     if value>10:
+#         print(f"{key}: {value}")
+
+
 # 23. **Check for Common Keys**: Given two dictionaries, check if they have any keys in common.
+# first_dict={'a': 8, 'b': 12, 'c': 17, 'd': 20}
+# second_dict={'e': 11, 'm': 13, 'g': 15, 'l': 25}
+# key1=set(first_dict.keys())
+# key2=set(second_dict.keys())
+# inter=key1.intersection(key2)
+# empty=set()
+# if inter!=empty:
+#     print("there is(are) some common key(s)")
+# else:print("there is(are) not any common key")
+
 # 24. **Create Dictionary from Tuple**: Given a tuple of key-value pairs, create a dictionary from it.
+# first_dict=({'a': 8}, {'b': 12}, {'c': 17}, {'d': 20})
+# mydict={}
+# for i in first_dict:
+#     mydict.update(i)
+# print(mydict)
+
 # 25. **Get the First Key-Value Pair**: Retrieve the first key-value pair from a dictionary.
+# first_dict={'a': 8, 'b': 12, 'c': 17, 'd': 20}
+# items=list(first_dict.items())
+# print(items[0])
