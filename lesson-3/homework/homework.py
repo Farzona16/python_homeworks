@@ -538,33 +538,144 @@
 # print(my_set)
 
 # 20. **Check Disjoint Sets**: Given two sets, check if they have no elements in common.
+# set_1={1,2,3,4,5,66,9}
+# set_2={7,8,10,12,13,15,1,4}
+# set_3=set_1.intersection(set_2)
+# empty=set()
+# if set_3!=empty:
+#     print("there is(are) some common elements") 
+# else:print("there is(are) not any  common element")
 
 # 21. **Remove Duplicates from a List**: Given a list, create a set from it to remove duplicates, then convert back to a list.
+# my_list=[1,3,2,3,4,5,6,7,8,9,10,3]
+# my_set=set(my_list)
+# newlist=list(my_set)
+# print(my_set)
+
 # 22. **Count Unique Elements**: Given a list, determine the count of unique elements using a set.
+# my_list=[1,3,2,3,4,5,6,7,8,9,10,3]
+# my_set=set(my_list)
+# newlist=list(my_set)
+# print(len(my_set))
+
 # 23. **Generate Random Set**: Create a set with a specified number of random integers within a certain range.
+# start=int(input("enter the starting point: "))
+# end=int(input("enter the ending point: "))
+# num=[start]
+# for i in range(end-start):
+#     start+=1
+#     num.append(start)
+# set(num)
+# print(num)
 
 
 # ### Dictionary Tasks
 
 # 1. **Get Value**: Given a dictionary and a key, retrieve the associated value, considering what to return if the key doesn’t exist.
+# my_dict={'a':1,'b':2,'c':3}
+# key='d'
+# value=my_dict.get(key)
+# print(value)
+
 # 2. **Check Key**: Given a dictionary and a key, check if the key is present in the dictionary.
+# my_dict={'a':1,'b':2,'c':3}
+# key='d'
+# print(key in my_dict)
+    
 # 3. **Count Keys**: Determine the number of keys in the dictionary.
+# my_dict={'a':1,'b':2,'c':3}
+# num=len(my_dict)
+# print(num)
+
 # 4. **Get All Keys**: Create a list that contains all the keys in the dictionary.
+# my_dict={'a':1,'b':2,'c':3}
+# key=list(my_dict.keys())
+# print(key)
+
 # 5. **Get All Values**: Create a list that contains all the values in the dictionary.
+# my_dict={'a':1,'b':2,'c':3}
+# values=list(my_dict.values())
+# print(values)
+
 # 6. **Merge Dictionaries**: Given two dictionaries, create a new dictionary that combines both.
+# my_dict={'a':1,'b':2,'c':3}
+# my_2dict={'d':5,'e':7,'f':9}
+# my_3dict={**my_2dict,**my_dict}
+# print(my_3dict)
+
 # 7. **Remove Key**: Given a dictionary and a key, remove the key if it exists, handling the case if it doesn’t.
+# my_dict={'a':1,'b':2,'c':3}
+# key='a'
+# my_dict.pop(key)
+# print(my_dict)
+
 # 8. **Clear Dictionary**: Create a new empty dictionary.
+# my_dict={'a':1,'b':2,'c':3}
+# my_dict.clear()
+# print(my_dict)
+
 # 9. **Check if Dictionary is Empty**: Determine if a dictionary has any elements.
+# my_dict={}
+# empty={}
+# if my_dict==empty:
+#     print("it is empty")
+# else: print("it is not empty")
+
 # 10. **Get Key-Value Pair**: Given a dictionary and a key, retrieve the key-value pair if the key exists.
+# my_dict={'a':1,'b':2,'c':3}
+# print(my_dict.values())
+
 # 11. **Update Value**: Given a dictionary, update the value for a specified key.
+# my_dict={'a':1,'b':2,'c':3}
+# my_dict['c']=8
+# print(my_dict)
+
 # 12. **Count Value Occurrences**: Given a dictionary, count how many times a specific value appears across the keys.
+# my_dict={'a':1,'b':2,'c':3,'d':1}
+# value_given=1
+# count=sum(1 for i in my_dict.values() if i==value_given)
+# print(count)
+
 # 13. **Invert Dictionary**: Given a dictionary, create a new dictionary that swaps keys and values.
+'''my_dict={'a':1,'b':2,'c':3,'d':6}
+newdict={}
+for i in my_dict.values():
+    my_dict'''
+
 # 14. **Find Keys with Value**: Given a dictionary and a value, create a list of all keys that have that value.
+''' -------------------- '''
+
 # 15. **Create a Dictionary from Lists**: Given two lists (one of keys and one of values), create a dictionary that pairs them.
+# keys=['a','b','c','d']
+# values=[1,2,3,4]
+# my_dict={}
+# for i in range(len(keys)):
+#     my_dict[keys[i]]=values[i]
+# print(my_dict)
+
 # 16. **Check for Nested Dictionaries**: Given a dictionary, check if any values are also dictionaries.
+'''mydict={
+    'ism':
+}'''
+
 # 17. **Get Nested Value**: Given a nested dictionary, retrieve a value from within one of the inner dictionaries.
+# mydict={
+#     1:'a',
+#     2:'b',
+#     3:{4:'e', 5:'f'},
+#     6:'g'
+# }
+# print(mydict[3][5])
+
 # 18. **Create Default Dictionary**: Create a dictionary that provides a default value for missing keys.
+''' -----------------------------------  
+-----------------
+-----------------------'''
+
 # 19. **Count Unique Values**: Given a dictionary, determine the number of unique values it contains.
+my_dict={'a':1,'b':2,'c':3,'d':6}
+
+
 # 20. **Sort Dictionary by Key**: Create a new dictionary sorted by keys.
 # 21. **Sort Dictionary by Value**: Create a new dictionary sorted by values.
 # 22. **Filter by Value**: Given a dictionary, create a new dictionary that only includes items with values that meet a certain condition.
