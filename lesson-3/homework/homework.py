@@ -673,10 +673,15 @@ for i in my_dict.values():
 -----------------------'''
 
 # 19. **Count Unique Values**: Given a dictionary, determine the number of unique values it contains.
-my_dict={'a':1,'b':2,'c':3,'d':6}
-
+# my_dict={'a':1,'b':2,'c':3,'d':6, 'e':6}
+# values=my_dict.values()
+# print(len(set(values)))
 
 # 20. **Sort Dictionary by Key**: Create a new dictionary sorted by keys.
+my_dict={'b':1,'d':2,'c':3,'a':6, 'e':6}
+newdict=sorted(my_dict)
+print(my_dict)
+print(newdict)
 # 21. **Sort Dictionary by Value**: Create a new dictionary sorted by values.
 # 22. **Filter by Value**: Given a dictionary, create a new dictionary that only includes items with values that meet a certain condition.
 # 23. **Check for Common Keys**: Given two dictionaries, check if they have any keys in common.
