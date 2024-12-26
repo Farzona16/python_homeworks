@@ -148,10 +148,22 @@
 
 # **6. Prime Numbers**
 # Task: Write a Python program that prints all prime numbers between 1 and 100.
+# def sum_prime():
+#     prime_numbers=[]
+#     for i in range(2,100):
+#         is_prime=True
+#         for k in range(2,int(i**.5)+1):
+#             if i%k==0:
+#                 is_prime=False
+#                 break
+#         if is_prime==True:
+#             prime_numbers.append(i)
+#     print(sum(prime_numbers))
+# sum_prime()
 
 # > A prime number is a number greater than 1 that is not divisible by any number other than 1 and itself. Use nested loops to check divisibility.
 # ---
-'''---------------------------'''
+
 # ### Bonus Challenge
 # Task: Create a simple text-based Rock, Paper, Scissors game where the player plays against the computer.
 # - The computer randomly chooses `rock`, `paper`, or `scissors` using `random.choice()`.
