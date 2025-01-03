@@ -637,13 +637,27 @@
 # print(count)
 
 # 13. **Invert Dictionary**: Given a dictionary, create a new dictionary that swaps keys and values.
-'''my_dict={'a':1,'b':2,'c':3,'d':6}
-newdict={}
-for i in my_dict.values():
-    my_dict'''
+# original_dict = {'a': 1, 'b': 2, 'c': 3}
+# inverted_dict = {}
+
+# for key, value in original_dict.items():
+#     inverted_dict[value] = key
+
+# print("Original Dictionary:", original_dict)
+# print("Inverted Dictionary:", inverted_dict)
+
 
 # 14. **Find Keys with Value**: Given a dictionary and a value, create a list of all keys that have that value.
-''' -------------------- '''
+# my_dict = {'a': 1, 'b': 2, 'c': 1, 'd': 3}
+# value_to_find = 1
+
+# keys_with_value = []
+# for key, value in my_dict.items():
+#     if value == value_to_find:
+#         keys_with_value.append(key)
+
+# print(keys_with_value)
+
 
 # 15. **Create a Dictionary from Lists**: Given two lists (one of keys and one of values), create a dictionary that pairs them.
 # keys=['a','b','c','d']
@@ -654,9 +668,13 @@ for i in my_dict.values():
 # print(my_dict)
 
 # 16. **Check for Nested Dictionaries**: Given a dictionary, check if any values are also dictionaries.
-'''mydict={
-    'ism':
-}'''
+# my_dict = {'a': 1, 'b': {'x': 10, 'y': 20}, 'c': 3}
+# contains_dict = False
+# for value in my_dict.values():
+#     if isinstance(value, dict):
+#         contains_dict = True
+#         break
+# print(contains_dict)
 
 # 17. **Get Nested Value**: Given a nested dictionary, retrieve a value from within one of the inner dictionaries.
 # mydict={
