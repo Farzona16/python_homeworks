@@ -1,61 +1,59 @@
 import os
 
 class Employee:
-    def __init__(self, employee_id, name, position, salary):
-        self.employee_id = employee_id
-        self.name = name
-        self.position = position
-        self.salary = salary
-
-    def __str__(self):
-        return f"{self.employee_id}, {self.name}, {self.position}, {self.salary}"
-
+    def __init__(self,employee_id,name,position,salary):
+        self.employee_id=employee_id
+        self.name=name
+        self.position=position
+        self.salary=salary
+    
+    def str(self):
+        return f"{self.employee_id},{self.name}, {self.position},{self.salary}"
+    
     @staticmethod
     def from_string(data):
-        employee_id, name, position, salary = data.split(", ")
-        return Employee(employee_id, name, position, float(salary))
-
+        employee_id, name, position,salary= data.split(', ')
+        return Employee(employee_id,name,position,float(salary))
 
 class EmployeeManager:
-    FILE_NAME = "employees.txt"
-
+    my_file='employees.txt'
+    
     def __init__(self):
-        if not os.path.exists(self.FILE_NAME):
-            with open(self.FILE_NAME, 'w') as f:
-                pass  
-
+        if not os.path.exists(self.my_file):
+            with open(self.my_file, 'w') as f:
+                pass
+    
     def add_employee(self):
-        employee_id = input("Enter Employee ID: ").strip()
+        employee_id=input("Enter the employee id: ").strip()
         if self.search_employee(employee_id):
-            print("Error: Employee ID already exists.")
+            print("This employee id already exists:")
             return
-        name = input("Enter Name: ").strip()
-        position = input("Enter Position: ").strip()
-        salary = float(input("Enter Salary: ").strip())
+        name=input("Enter name: ")
+        position=input("Enter position: ")
+        salary=float(input("Enter salary: "))
+        employee=Employee(employee_id,name,position,salary)
+        with open(self.my_file,'a') as f:
+            f.write(str(employee)+'\n')
+        print("Employee added successfully")
 
-        employee = Employee(employee_id, name, position, salary)
-        with open(self.FILE_NAME, 'a') as f:
-            f.write(str(employee) + "\n")
-        print("Employee added successfully!")
-
-    def view_all_employees(self):
-        with open(self.FILE_NAME, 'r') as f:
-            records = f.readlines()
+    def view_employee(self):
+        with open(self.my_file,'r') as f:
+            records=f.readlines()
         if not records:
-            print("No records found.")
+            print("No records found")
             return
-        print("Employee Records:")
+        print("Employee records: ")
         for record in records:
             print(record.strip())
 
-    def search_employee(self, employee_id):
-        with open(self.FILE_NAME, 'r') as f:
+    def search_employee(self,employee_id):
+        with open(self.my_file, 'r') as f:
             for line in f:
-                employee = Employee.from_string(line.strip())
-                if employee.employee_id == employee_id:
+                employee=Employee.from_string(line.strip())
+                if employee.employee_id==employee_id:
                     return employee
         return None
-
+    
     def update_employee(self):
         employee_id = input("Enter Employee ID to update: ").strip()
         employee = self.search_employee(employee_id)
@@ -72,7 +70,7 @@ class EmployeeManager:
         updated_employee = Employee(employee_id, name, position, salary)
         self._update_file(employee_id, str(updated_employee))
         print("Employee updated successfully!")
-
+  
     def delete_employee(self):
         employee_id = input("Enter Employee ID to delete: ").strip()
         if not self.search_employee(employee_id):
@@ -82,7 +80,7 @@ class EmployeeManager:
         self._update_file(employee_id, None)
         print("Employee deleted successfully!")
 
-    def _update_file(self, employee_id, new_data):
+    def update_file(self, employee_id, new_data):
         with open(self.FILE_NAME, 'r') as f:
             lines = f.readlines()
         with open(self.FILE_NAME, 'w') as f:
@@ -126,7 +124,6 @@ class EmployeeManager:
             else:
                 print("Invalid choice. Please try again.")
 
-
-if __name__ == "__main__":
+if __name__=='__main__':
     manager = EmployeeManager()
     manager.run()
