@@ -3,9 +3,9 @@ import fitz
 from PIL import Image
 import os
 
-API_ID = 29710094 
-API_HASH = "501d79f4d016239ec2b4fda8fd606d2c"  
-BOT_TOKEN = "7749894613:AAGFFbza9dDw1eRVa3I4YD-Zx7yB7ev9waA"  
+API_ID = 111234555 
+API_HASH = "dssdfghjjjjkoooofda8fd606d2c"  
+BOT_TOKEN = "mjnhbgvvvfvrd9dDw1eRVa3I4YD-Zx7yB7ev9waA"  
 
 app = Client("my_admin_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 def take_photo(my_pdf, my_image="cover.jpg"):
