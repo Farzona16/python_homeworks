@@ -1,6 +1,6 @@
 import requests
 
-api_key = "d6e99f663d5ca9a7605c5c257373edc2"
+api_key = "api_key"
 url = f"https://api.openweathermap.org/data/2.5/weather?q=Tashkent&appid={api_key}&units=metric"
 
 response=requests.get(url)

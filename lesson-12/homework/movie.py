@@ -1,7 +1,7 @@
 import requests
 import random
 
-api_key = "f33f605d" 
+api_key = "api_key" 
 url = "http://www.omdbapi.com/"
 
 def get_movie_by_genre(genre):
