@@ -24,7 +24,7 @@ laptop_data = []
 with open("laptops.json", "w") as json_file:
     json.dump(laptop_data, json_file, indent=4)
 
-print("✅ Ma'lumotlar laptops.json fayliga saqlandi!")
+print("Datas are saved")
 
 
 driver.quit()
